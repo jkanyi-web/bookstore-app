@@ -1,7 +1,7 @@
 /** @format */
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/Home';
+import HomePage from './pages/BookList';
 import Categories from './pages/Categories';
 import './App.css';
 
