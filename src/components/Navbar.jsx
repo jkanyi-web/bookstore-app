@@ -1,22 +1,27 @@
 /** @format */
 
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function Navbar() {
+function BookstoreNavbar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink exact to='/'>
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to='/categories'>Categories</NavLink>
-        </li>
-      </ul>
-    </nav>
+    <div className='navbar-container'>
+      <h1 className='navbar-title'>Bookstore</h1>
+      <nav className='navbar'>
+        <ul className='nav-items'>
+          <li className='nav-link'>
+            <Link to='/' className='nav-link-text'>
+              Books
+            </Link>
+          </li>
+          <li className='nav-link'>
+            <Link to='/categories' className='nav-link-text'>
+              Categories
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
 
-export default Navbar;
+export default BookstoreNavbar;
